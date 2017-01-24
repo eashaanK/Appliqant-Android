@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AppliqantTermsCondition"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:elevation="0dp">
+
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/termCondToolBarCancelButton"
+            android:layout_gravity="left"
+            android:background="@color/AppliqantTermsCondition"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:layout_gravity="center"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:id="@+id/textView" />
+
+        <Button
+            android:text="I Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/termCondIAcceptButton"
+            android:layout_gravity="right"
+            android:background="@color/AppliqantTermsCondition"
+            android:textSize="15sp"
+            android:textColor="@android:color/background_light"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Your Job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:id="@+id/termCondLabelField"
+                android:paddingTop="25dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

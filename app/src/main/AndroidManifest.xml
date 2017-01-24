@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appliqant.quantilus.appliqant">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="appliqantapp.com"
+                    android:scheme="http"
+                    android:pathPattern=".*" />
+                <data
+                    android:host="www.appliqantapp.com"
+                    android:scheme="http"
+                    android:pathPattern=".*" />
+                <data
+                    android:host="appliqantapp.com"
+                    android:scheme="https"
+                    android:pathPattern=".*" />
+                <data
+                    android:host="www.appliqantapp.com"
+                    android:scheme="https"
+                    android:pathPattern=".*" />
+
+            </intent-filter>
+
+        </activity>
+        <activity android:name="TakeInterview"/>
+        <activity android:name="JobDetailsActivity"/>
+        <activity android:name="TermsAndConditionsActivity"/>
+        <activity android:name=".FileChooserActivity"/>
+        <activity android:name=".ConductInterviewObjActivity"/>
+        <activity android:name=".PreObjectiveQActivity" />
+        <activity android:name=".PreSubjectiveQActivity" />
+
+    </application>
+
+</manifest>

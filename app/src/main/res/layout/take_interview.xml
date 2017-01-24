@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ApplicantGreen"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:elevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidate Details"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailInputLabel"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:text="*Firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/firstnameTxtField"
+                android:paddingLeft="10dp"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="?android:attr/textColorTertiary" />
+
+            <TextView
+                android:text="*Lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/lastnameTxtField"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="?android:attr/textColorTertiary" />
+
+            <TextView
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/locationTxtField"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="?android:attr/textColorTertiary"
+                android:hint="Enter Your Location" />
+
+            <TextView
+                android:text="Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/phoneTxtField"
+                android:hint="000000000"
+                android:paddingLeft="10dp"
+                android:textColor="?android:attr/textColorTertiary"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:text="Availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:headerBackground="@color/GoogleDriveButton" />
+
+            <TextView
+                android:text="Resume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <Button
+                android:text="Choose a File"
+                android:layout_height="wrap_content"
+                android:id="@+id/pickResumeButton"
+                android:layout_width="wrap_content"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/GoogleDriveButton"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:text="Choose a File"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pickResumeLabel"
+                android:paddingLeft="10dp"
+                android:textStyle="normal|italic"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:text="Job Details"
+                android:layout_height="wrap_content"
+                android:id="@+id/jobDetailsButton"
+                android:layout_width="wrap_content"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/ApplicantJobDetails"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_light"
+                android:layout_gravity="center" />
+
+            <Button
+                android:text="Take Interview"
+                android:layout_height="wrap_content"
+                android:id="@+id/takeInterviewButton"
+                android:layout_width="wrap_content"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/ApplicantGreen"
+                android:textSize="25sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

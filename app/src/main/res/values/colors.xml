@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ApplicantGreen">#3b9e3a</color>
+    <color name="ApplicantOrange">#ef3d10</color>
+    <color name="AppliqantTermsCondition">#2f37a1</color>
+    <color name="ApplicantJobDetails">#ef3d10</color>
+    <color name="ApplicantCandidateDetails">#3b9e3a</color>
+    <color name="GoogleDriveButton">#312d33</color>
+</resources>

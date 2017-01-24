@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surfaceViewCam"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/ApplicantGreen"
+        android:layout_height="75dp">
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/objectiveTimer"
+            android:layout_weight="1"
+            android:textSize="50sp"
+            android:textColor="@android:color/background_light"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="Next"
+            android:layout_height="match_parent"
+            android:id="@+id/objectiveNextButton"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="@color/ApplicantGreen" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="20dp"
+        android:id="@+id/objectiveQuestionTitleLabel" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Hi\nWhat is your name?"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/objectiveQuestionLabel"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
