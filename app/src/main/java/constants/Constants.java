@@ -14,10 +14,10 @@ public class Constants {
     public static final int REQUEST_CAMERA_PERMISSION = 2;
 
 
-    public static final String TEST_DB_HOST = "52.90.36.143";
-    public static final String PRODUCTION_DB_HOST = "54.161.246.106";
-    public static final String RESTFUL_API_HOST = "172.31.27.222";
-    public static final String RESTFUL_API_PORT = "1000";
+    public static final String TEST_DB_HOST = "";
+    public static final String PRODUCTION_DB_HOST = "";
+    public static final String RESTFUL_API_HOST = "";
+    public static final String RESTFUL_API_PORT = "";
 
     public static final String CANDIDATE_DB_COLLECTION_NAME = "candidateDetails";
     public static final String JOBLIST_DB_COLLECTION_NAME = "jobList";
